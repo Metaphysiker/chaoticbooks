@@ -1,1 +1,8 @@
-<h1>Index site</h1>
+<h1>Index site</h1><br>
+<br>
+<% @books.each do |book| %>
+  <div class="imagedropshadow" %>
+    <%= book.booktitle %><br>
+    <%= book.bookdescription %><br>
+  </div>
+<% end %>

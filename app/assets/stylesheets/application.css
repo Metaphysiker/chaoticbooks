@@ -31,3 +31,12 @@ th { border-bottom: 1px solid #DDD; }
     margin: 5px;
     border: solid 3px #E8E8E8;
 }
+
+.imagedropshadow {
+    width: 95%;
+    background: linear-gradient(to bottom right, white,	#E8E8E8 );
+    border-radius: 15px;
+    padding: 8px;
+    margin: 10px;
+    border: solid 3px #E8E8E8;
+}
