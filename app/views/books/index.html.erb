@@ -1,8 +1,9 @@
 <h1>Index site</h1><br>
 <br>
-<% @books.each do |book| %>
+<% @book.each do |book| %>
   <div class="imagedropshadow" %>
-    <%= book.booktitle %><br>
-    <%= book.bookdescription %><br>
+    <%= link_to book.booktitle, book_path(book) %><br>
+    <%= book.bookdescription %><br><br>
+    <%= render 'books/editdelete' %>
   </div>
 <% end %>

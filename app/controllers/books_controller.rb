@@ -2,7 +2,7 @@ class BooksController < ApplicationController
   before_action :find_book, only: [:show, :edit, :update]
 
   def index
-    @books = Book.all
+    @book = Book.all
   end
 
   def show
@@ -29,7 +29,8 @@ class BooksController < ApplicationController
   end
 
   def destroy
-
+    @book.destroy
+    redirect_to root_path
   end
 
   def update

@@ -1,3 +1,5 @@
 <h1><%=@book.booktitle %></h1><br>
 <br>
-<%= @book.bookdescription %>
+<%= @book.bookdescription %><br>
+<%= render 'books/editdelete' %><br>
+<%= link_to "Back", root_path %>
